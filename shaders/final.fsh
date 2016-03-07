@@ -13,5 +13,5 @@ void main() {
 	vec4 color = texture2D(composite, texcoord.st);
   float grey = (color.r + color.g + color.b ) * 0.333;
 
-	gl_FragColor = vec4(grey, grey, grey, 1.0);//vec4(grey,grey,grey,1.0);
+	gl_FragColor = color; //vec4(grey, grey, grey, 1.0);//vec4(grey,grey,grey,1.0);
 }
